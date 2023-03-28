@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin:0%; 
+    padding: 0%;
+    box-sizing: border-box;
+}
+html, body{
+   height: 100%;
+   width: 100%;
+   font-size:18px;
+}
+
+:root{
+    --Darkcyan: hsl(185, 75%, 39%);
+    --Verydarkdesaturatedblue: hsl(229, 23%, 23%);
+    --arkgrayishblue: hsl(227, 10%, 46%);
+    --Darkgray: hsl(0, 0%, 59%);
+}
+   
+body{
+    font-family:'Kumbh Sans', sans-serif;
+    display: grid;
+    place-items: center;
+    background-image:  url(./images/bg-pattern-top.svg),url(./images/bg-pattern-top.svg);
+    background-color:  var(--Darkcyan);
+    background-repeat: no-repeat no-repeat;
+    background-position: right 51vw bottom 20vh,left 45vw top 40vh;   
+
+}
+.card{
+    width: 335px;
+    height: 375px;
+    border-radius: 13px;
+    overflow: hidden;
+    background-color: white;    
+
+}
+
+.card__header{
+    height: 140px;
+    background-image: url(./images/bg-pattern-card.svg);
+    position: relative;
+}
+
+.card__header__photo{
+    width: 96px;
+    height: 96px;
+    background-image: url(./images/image-victor.jpg);
+    border-radius: 50%;
+    outline: 5px solid #fff;
+    position: absolute;
+    top: 86px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.card__info{
+    height: 146px;
+    display: flex;
+    align-items: center;
+    color: var(--Verydarkdesaturatedblue);
+    padding: 61px 0 0 0;
+    flex-direction: column;
+    border-bottom: 1px solid var(--Darkgray);
+}
+
+.card__info--basic{
+    display: flex;
+    column-gap: 9px;
+}
+.span{
+    color: var(--arkgrayishblue);
+}
+
+.card__info--basic span:nth-child(1){
+    font-weight: 700;
+}
+
+.card__info--city{
+    padding-top: 16px;
+    padding-bottom: 29px;
+    font-size:14px;
+    color: var(--Darkgray) ;
+}
+
+.card__statistics{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 88px;    
+    color:var(--Verydarkdesaturatedblue)
+}
+
+.card__statistics__data{
+    text-align: center;
+
+}
+
+.card_statistics--number{
+    font-weight: 700;
+
+}
+
+.card_statistics--type{
+    font-size: 0.44rem;
+    letter-spacing: 2px;
+    color:var(--Darkgray);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color:cyan
+}
+@media (min-width:1440px){
+    body{
+        padding: 150px 0;
+    }
+}
